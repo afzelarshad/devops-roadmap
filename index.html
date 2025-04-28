@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior DevOps Engineer Roadmap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* Apply basic font and background to body */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f6; /* Light grey background */
+            color: #333;
+            line-height: 1.6;
+            padding: 1.5rem; /* Use rem for padding */
+        }
+
+        /* Center container and set max width */
+        .container {
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Styling for the phase cards */
+        .phase-card {
+            background-color: #ffffff; /* White card background */
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        /* Styling for phase titles */
+        .phase-title {
+            color: #1a73e8; /* Blue color for phase titles */
+            font-weight: 700;
+            font-size: 1.875rem; /* Equivalent to text-2xl in Tailwind */
+            margin-bottom: 1rem; /* Use rem for spacing */
+        }
+
+        /* Styling for key area titles */
+        .key-area-title {
+            color: #34a853; /* Green color for key area titles */
+            font-weight: 600;
+            font-size: 1.25rem; /* Equivalent to text-xl in Tailwind */
+            margin-top: 1.5rem; /* Use rem for spacing */
+            margin-bottom: 0.5rem; /* Use rem for spacing */
+        }
+
+        /* Placeholder styling for the main image - replace this with your image styles */
+        .image-placeholder {
+             width: 100%; /* Make image placeholder responsive */
+             height: 200px; /* Adjust height as needed */
+             background-color: #ddd; /* Placeholder color */
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             font-size: 1.2em;
+             color: #555;
+             margin-bottom: 24px;
+             border-radius: 8px;
+             /* Add some text to the placeholder */
+             content: "[Insert Roadmap Concept Image Here]";
+             overflow: hidden; /* Hide any overflow */
+        }
+
+         /* Ensure list items have proper spacing */
+        .list-inside li {
+            margin-bottom: 0.5rem; /* Add space between list items */
+        }
+
+         /* Style for actual icons using Font Awesome */
+        .fas, .fab, .far {
+            vertical-align: middle;
+            margin-right: 8px;
+            color: #1a73e8; /* Example icon color - you can adjust this */
+        }
+         /* Specific icon colors if needed */
+        .fa-linux { color: #fcc624; } /* Example Linux yellow */
+        .fa-aws { color: #FF9900; } /* Example AWS orange */
+        .fa-docker { color: #2496ED; } /* Example Docker blue */
+        .fa-kubernetes { color: #326CE5; } /* Example Kubernetes blue */
+        .fa-gitlab { color: #FCA326; } /* Example GitLab orange */
+        .fa-python { color: #3776AB; } /* Example Python blue */
+        .fa-git-alt { color: #F05033; } /* Example Git orange */
+        /* Add more specific colors for other icons as desired */
+
+    </style>
+</head>
+<body>
+
+    <div class="container mx-auto">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Senior DevOps Engineer Roadmap</h1>
+            <p class="text-xl text-gray-600">Your Learning Path Based on Job Description Requirements</p>
+        </header>
+
+        <div class="image-placeholder">
+             </div>
+
+        <section class="mb-12 phase-card">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Introduction</h2>
+            <p class="text-gray-700">
+                Based on the provided Senior DevOps Engineer job description, this roadmap outlines a structured path to acquire the necessary skills and knowledge. This guide is designed to build a strong foundation and progressively move towards the advanced and specific requirements highlighted in the job role.
+            </p>
+        </section>
+
+        <section class="phase-card">
+            <h2 class="phase-title">Phase 1: Foundational Skills</h2>
+            <p class="text-gray-600 mb-4">
+                <i class="fas fa-clock"></i> Estimated Time: 3-6 months
+            </p>
+
+            <h3 class="key-area-title">Key Areas:</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>
+                    <i class="fab fa-linux"></i>
+                    **Operating Systems:** Deep dive into **Linux**: Command line proficiency, file systems, process management, networking basics, user and group management, permissions.
+                </li>
+                <li>
+                    <i class="fas fa-network-wired"></i>
+                    **Networking Fundamentals:** Understand TCP/IP, DNS, HTTP/S, basic routing and firewalls. Crucial for understanding how applications communicate and how infrastructure is secured.
+                </li>
+                <li>
+                    <i class="fas fa-terminal"></i>
+                    **Scripting and Programming:** Master **Bash scripting** for automation of routine tasks.
+                </li>
+                <li>
+                    <i class="fab fa-python"></i>
+                    Learn **Python** for more complex automation, tool development, and interacting with APIs.
+                </li>
+                <li>
+                    <i class="fab fa-git-alt"></i>
+                    **Version Control:** Become highly proficient with **Git**: branching, merging, pull requests, resolving conflicts. Essential for collaborative development and Infrastructure as Code.
+                </li>
+            </ul>
+        </section>
+
+        <section class="phase-card">
+            <h2 class="phase-title">Phase 2: Cloud and Infrastructure as Code</h2>
+             <p class="text-gray-600 mb-4">
+                <i class="fas fa-clock"></i> Estimated Time: 6-12 months
+            </p>
+            <h3 class="key-area-title">Key Areas:</h3>
+             <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>
+                     <i class="fas fa-cloud"></i>
+                    **Cloud Computing Concepts:** Understand core concepts (IaaS, PaaS, SaaS), scalability, elasticity, high availability.
+                </li>
+                <li>
+                    <i class="fab fa-aws"></i>
+                    **Amazon Web Services (AWS):** Gain in-depth knowledge and hands-on experience with key AWS services: VPC, EC2, S3, IAM, RDS/Aurora, CloudFront, EKS, Lambda. Explore CloudWatch, Autoscaling Groups, ELB.
+                </li>
+                <li>
+                    <i class="fas fa-file-code"></i> **Terraform:** Master Infrastructure as Code using **Terraform**. Write configurations for AWS resources. Understand module development. Learn remote state management. Explore best practices.
+                </li>
+            </ul>
+        </section>
+
+        <section class="phase-card">
+            <h2 class="phase-title">Phase 3: CI/CD and Containerization</h2>
+             <p class="text-gray-600 mb-4">
+                <i class="fas fa-clock"></i> Estimated Time: 6-12 months
+            </p>
+            <h3 class="key-area-title">Key Areas:</h3>
+             <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>
+                    <i class="fas fa-sync-alt"></i> **CI/CD Concepts:** Understand the principles of Continuous Integration and Continuous Delivery.
+                </li>
+                <li>
+                    <i class="fab fa-gitlab"></i>
+                    **GitLab CI/CD:** Gain hands-on experience building and maintaining pipelines using **GitLab CI/CD**. Learn stages, jobs, and runners. Understand integrating testing, building, deployment.
+                </li>
+                <li>
+                    <i class="fab fa-docker"></i>
+                    **Docker:** Learn to containerize applications using **Docker**. Understand Dockerfiles, images, containers, volumes.
+                </li>
+                <li>
+                    <i class="fas fa-cubes"></i> **Kubernetes:** Gain strong experience with **Kubernetes** for orchestrating containers. Understand Pods, Deployments, Services, Namespaces, `kubectl`.
+                </li>
+                 <li>
+                    <i class="fas fa-cow"></i> **Rancher:** Get hands-on experience with **Rancher** as a Kubernetes management platform. Learn to deploy, manage, and monitor clusters using Rancher.
+                </li>
+            </ul>
+        </section>
+
+        <section class="phase-card">
+            <h2 class="phase-title">Phase 4: Monitoring, Alerting, and Operations</h2>
+             <p class="text-gray-600 mb-4">
+                <i class="fas fa-clock"></i> Estimated Time: 3-6 months
+            </p>
+            <h3 class="key-area-title">Key Areas:</h3>
+             <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>
+                    <i class="fas fa-chart-line"></i> **Monitoring and Alerting:** Implement and maintain solutions using **Datadog**. Learn to collect metrics, logs, traces. Set up dashboards and alerts. Understand defining metrics and thresholds.
+                </li>
+                <li>
+                    <i class="fas fa-database"></i>
+                    **Database Management:** Focus on ensuring high availability and performance of **RDS/Aurora** databases. Understand backup/restore, replication, performance tuning basics.
+                </li>
+                <li>
+                    <i class="fas fa-wrench"></i> **Troubleshooting:** Develop strong system troubleshooting and problem-solving skills. Learn to diagnose issues using logs, monitoring, debugging.
+                </li>
+            </ul>
+        </section>
+
+        <section class="phase-card">
+            <h2 class="phase-title">Phase 5: Advanced Topics and Specialization</h2>
+             <p class="text-gray-600 mb-4">
+                <i class="fas fa-clock"></i> Estimated Time: Ongoing
+            </p>
+            <h3 class="key-area-title">Key Areas:</h3>
+             <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>
+                    <i class="fas fa-shield-alt"></i>
+                    **Security:** Apply best practices in system security and hardening. Knowledge of compliance standards, vulnerability scanning, secrets management. Understand IAM roles/policies, security groups, encryption.
+                </li>
+                <li>
+                    <i class="fas fa-certificate"></i>
+                    **AWS Certifications:** Prepare for and obtain relevant AWS certifications (DevOps Engineer, Solutions Architect).
+                </li>
+                 <li>
+                    <i class="fas fa-cloud"></i> **Multi-region/Hybrid Cloud:** Explore concepts and gain experience (Nice to Have from JD).
+                </li>
+                <li>
+                    <i class="fas fa-robot"></i> **Automation of Operational Processes:** Continuously identify and automate tasks using scripting and tools.
+                </li>
+            </ul>
+        </section>
+
+        <section class="phase-card">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Throughout Your Journey:</h2>
+            <h3 class="key-area-title">Key Activities:</h3>
+             <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>
+                    <i class="fas fa-laptop-code"></i> **Hands-on Practice:** Crucial! Use AWS free tier, build and deploy applications.
+                </li>
+                <li>
+                    <i class="fas fa-folder-open"></i> **Build Projects:** Create a portfolio showcasing your skills.
+                </li>
+                <li>
+                    <i class="fab fa-github"></i> **Contribute to Open Source:** Engage with DevOps tool communities.
+                </li>
+                <li>
+                    <i class="fas fa-chart-line"></i> **Follow Industry Trends:** Stay updated with best practices.
+                </li>
+                 <li>
+                    <i class="fas fa-book"></i> **Read Documentation:** Refer to official docs for all tools.
+                </li>
+                 <li>
+                    <i class="fas fa-users"></i> **Join Communities:** Learn from others, share experiences.
+                </li>
+                 <li>
+                    <i class="fas fa-handshake"></i> **Understand DevOps Culture:** Focus on collaboration and shared responsibility.
+                </li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
